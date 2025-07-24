@@ -1,0 +1,7 @@
+enable: true
+
+title: "Take your business online now!"
+image: "images/services-web-development.png"
+button:
+  label: "Let's talk"
+  link: "/contact-us/"

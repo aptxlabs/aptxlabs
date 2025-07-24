@@ -1,0 +1,10 @@
+{
+ "compilerOptions": {
+  "baseUrl": ".",
+  "paths": {
+   "*": [
+    "../_vendor/github.com/writeonlycode/hugo-up-business/assets/*"
+   ]
+  }
+ }
+}

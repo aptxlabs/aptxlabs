@@ -1,0 +1,27 @@
+title: "Aptxlabs"
+description: "We specialize in IT solutions, software development, cloud automation, business consulting, and creative media services."
+images: 
+  - "images/hero-image.png"
+
+logo: "arrow-up.png"
+
+favicons:
+  themeColor: "#FFFFFF"
+  backgroundColor: "#FFFFFF"
+  faviconColor: "#000000"
+
+social:
+  facebook: "https://facebook.com/aptxlabs"
+  youtube: "https://www.youtube.com/@Aptxlabs"
+  instagram: "https://www.instagram.com/aptxlabs"
+  twitter: "https://x.com/aptxlabs"
+
+location:
+  - "Shop No. 4, Nawazish Plaza, Roshan Gate Road, Aurangabad, Maharashtra 431001, India"
+
+contact:
+  - "faisal@faisaldarbar.com"
+  - "+91-97650-11119"
+
+copyright: "© 2025 Aptxlabs All Rights Reserved"
+

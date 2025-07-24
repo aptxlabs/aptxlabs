@@ -1,0 +1,13 @@
+enable: true
+
+title: "Digital **solutions** for businesses"
+text: "We specialize in IT solutions, software development, cloud automation, business consulting, and creative media services."
+
+buttons:
+  - label: "About Us"
+    url: "/about-us/"
+
+  - label: "Let's talk"
+    url: "/contact-us/"
+
+image: "images/hero-image.png"

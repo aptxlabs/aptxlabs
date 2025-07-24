@@ -1,0 +1,8 @@
+baseURL: "https://aptxlabs.com/"
+title: "Aptxlabs"
+summaryLength: 20
+
+services:
+  googleAnalytics:
+    id: G-MX459CF92X
+
