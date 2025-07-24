@@ -54,7 +54,7 @@
 </form>
 
 <!-- ✅ reCAPTCHA v3 Script: replace with your actual site key -->
-<script src="https://www.google.com/recaptcha/api.js?render=6LdUop0gAAAAANw7Q5G2wffaxTxMmWF-TCd_BwHk"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LcrLI4rAAAAACBK7t8fT8LlG2aZU_89Mf07aKy3"></script>
 
 <!-- ✅ Form Handling Script -->
 <script>
@@ -74,7 +74,7 @@
       }
 
       grecaptcha.ready(function () {
-        grecaptcha.execute("6LdUop0gAAAAANw7Q5G2wffaxTxMmWF-TCd_BwHk", { action: "contact" }).then(function (token) {
+        grecaptcha.execute("6LcrLI4rAAAAACBK7t8fT8LlG2aZU_89Mf07aKy3", { action: "contact" }).then(function (token) {
           const formData = new FormData(form);
           formData.append("g-recaptcha-response", token);
 
