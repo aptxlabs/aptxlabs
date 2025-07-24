@@ -88,15 +88,16 @@
         body: formData,
       });
 
-      const text = await response.text(); // Read response body for keyword check
+      const text = await response.text();
 
-      if (response.ok && data.success) {
+      if (response.ok) {
         status.textContent = "✅ Message sent successfully!";
         status.style.color = "#28a745";
         form.reset();
         grecaptcha.reset();
       } else {
-        throw new Error("Unexpected response");
+        status.textContent = "❌ " + text;
+        status.style.color = "#dc3545";
       }
     } catch (err) {
       status.textContent = "❌ Failed to send message. Please try again.";
