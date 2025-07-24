@@ -43,7 +43,6 @@
     ></textarea>
   </div>
 
-  <!-- Submit button -->
   <button
     type="submit"
     style="background-color: #007bff; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; cursor: pointer;"
@@ -51,49 +50,65 @@
     Send Message
   </button>
 
-  <!-- Status message -->
   <div id="form-status" style="margin-top: 1rem; font-weight: bold;"></div>
 </form>
 
-<!-- Load reCAPTCHA v3 -->
+<!-- ✅ reCAPTCHA v3 Script: replace with your actual site key -->
 <script src="https://www.google.com/recaptcha/api.js?render=6LdUop0gAAAAANw7Q5G2wffaxTxMmWF-TCd_BwHk"></script>
 
-<!-- Submission handling -->
+<!-- ✅ Form Handling Script -->
 <script>
-  const form = document.getElementById("contact-form");
-  const status = document.getElementById("form-status");
+  window.addEventListener("load", function () {
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    status.textContent = "Sending...";
-    status.style.color = "#555";
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      status.textContent = "Sending...";
+      status.style.color = "#555";
 
-    grecaptcha.ready(function () {
-      grecaptcha.execute("6LdUop0gAAAAANw7Q5G2wffaxTxMmWF-TCd_BwHk", { action: "contact" }).then(function (token) {
-        const formData = new FormData(form);
-        formData.append("g-recaptcha-response", token);
+      if (typeof grecaptcha === "undefined") {
+        status.textContent = "reCAPTCHA not loaded. Please try again.";
+        status.style.color = "#dc3545";
+        return;
+      }
 
-        fetch(form.action, {
-          method: "POST",
-          body: formData,
-        })
-          .then(async (response) => {
-            const text = await response.text();
-            if (response.ok) {
-              status.textContent = "✅ Message sent successfully!";
-              status.style.color = "#28a745";
-              form.reset();
-            } else {
-              status.textContent = "❌ Failed: " + text;
-              status.style.color = "#dc3545";
-            }
+      grecaptcha.ready(function () {
+        grecaptcha.execute("6LdUop0gAAAAANw7Q5G2wffaxTxMmWF-TCd_BwHk", { action: "contact" }).then(function (token) {
+          const formData = new FormData(form);
+          formData.append("g-recaptcha-response", token);
+
+          fetch(form.action, {
+            method: "POST",
+            body: formData,
           })
-          .catch((err) => {
-            console.error("Submission error:", err);
-            status.textContent = "❌ Error: " + err.message;
-            status.style.color = "#dc3545";
-          });
+            .then(async (response) => {
+              const text = await response.text();
+              if (response.ok) {
+                status.textContent = "✅ Message sent successfully!";
+                status.style.color = "#28a745";
+                form.reset();
+              } else {
+                status.textContent = "❌ Failed: " + text;
+                status.style.color = "#dc3545";
+              }
+            })
+            .catch((err) => {
+              console.error("Submission error:", err);
+              status.textContent = "❌ Error: " + err.message;
+              status.style.color = "#dc3545";
+            });
+        });
       });
     });
   });
 </script>
+
+<!-- ✅ Optional: Disclosure if you want to hide the badge -->
+<!-- 
+<p style="font-size: 0.8rem; text-align: center; color: #888; margin-top: 1rem;">
+  This site is protected by reCAPTCHA and the Google
+  <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and
+  <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+</p>
+-->
