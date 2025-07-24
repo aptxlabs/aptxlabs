@@ -90,7 +90,7 @@
 
       const text = await response.text(); // Read response body for keyword check
 
-      if (response.ok && text.toLowerCase().includes("message sent")) {
+      if (response.ok && data.success) {
         status.textContent = "✅ Message sent successfully!";
         status.style.color = "#28a745";
         form.reset();
