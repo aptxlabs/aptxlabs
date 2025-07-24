@@ -56,7 +56,7 @@
 </form>
 
 <!-- Load reCAPTCHA v3 -->
-<script src="https://www.google.com/recaptcha/api.js?render=your_site_key_here"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LdUop0gAAAAANw7Q5G2wffaxTxMmWF-TCd_BwHk"></script>
 
 <script>
   const form = document.getElementById("contact-form");
@@ -68,7 +68,7 @@
     status.style.color = "#555";
 
     grecaptcha.ready(function () {
-      grecaptcha.execute("your_site_key_here", { action: "contact" }).then(function (token) {
+      grecaptcha.execute("6LdUop0gAAAAANw7Q5G2wffaxTxMmWF-TCd_BwHk", { action: "contact" }).then(function (token) {
         const formData = new FormData(form);
         formData.append("g-recaptcha-response", token);
 
