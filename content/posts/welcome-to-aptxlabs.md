@@ -10,7 +10,7 @@ categories:
 image: "images/welcome-to-aptxlabs.png"
 ---
 
-![Banner](/images/test-banner.png)
+![Banner](/images/welcome-to-aptxlabs.png)
 
 We specialize in IT solutions, software development, cloud automation, business consulting, and creative media services.
 
