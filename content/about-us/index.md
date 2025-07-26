@@ -13,4 +13,6 @@ At **Aptxlabs**, we are passionate about leveraging technology to **optimize bus
 - 📊 Business Accounting and Taxation
 - 🎥 Content Creation and Videography
 
-Have a challenge or idea in mind? We’re ready when you are.
+Have a challenge or idea in mind? 
+
+We’re ready when you are.
