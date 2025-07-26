@@ -15,4 +15,4 @@ At **Aptxlabs**, we are passionate about leveraging technology to **optimize bus
 
 Have a challenge or idea in mind? 
 
-We’re ready when you are.
+We’re ready when you are!
