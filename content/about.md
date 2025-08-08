@@ -9,15 +9,31 @@ title: "About"
 
 We specialize in IT solutions, software development, cloud automation, business consulting, and creative media services.
 
-☁️ Our Expertise
-- 🖥 IT Infrastructure and Cybersecurity
-- 💻 Software and Web Development
-- ☁️ Cloud Computing and Automation
-- 📊 Business Accounting and Taxation
-- 🎥 Content Creation and Videography
+Here, you’ll find our thoughts, experiments, and experiences across:
 
-Have a challenge or idea in mind?
+- 🖥 **IT Infrastructure and Cybersecurity**
+- 💻 **Software and Web Development**
+- ☁️ **Cloud Computing and Automation**
+- 📊 **Business Accounting and Taxation**
+- 📚 **Writing and the Author Journey**
+- 🎥 **Content Creation and Videography**
 
-We’re ready when you are!
+## 🧩 Our Founder
+
+Meet our founder.
+
+### 👜 {{< faisaldarbarlink >}}
+
+Aptxlabs was founded by **Faisal Darbar** — a Full-Stack JavaScript Developer, Author-in-Progress, Aspiring YouTuber, and Expat Turned Entrepreneur.
+
+## 🧩 Our Ventures
+
+In addition to consulting and content creation, we’ve founded and currently manage the following businesses:
+
+### 👜 {{< ahlanbagslink >}}
+
+Ahlan Bags is a retail brand offering high-quality handbags, backpacks, laptop bags, wallets, and accessories in Aurangabad.
+
+Want more insights, stories, and updates?
 
 {{< blogbutton >}}
