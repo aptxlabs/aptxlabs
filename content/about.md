@@ -22,7 +22,7 @@ Here, you’ll find our thoughts, experiments, and experiences across:
 
 Meet our founder.
 
-### 👜 {{< faisaldarbarlink >}}
+### 👤 {{< faisaldarbarlink >}}
 
 Aptxlabs was founded by **Faisal Darbar** — a Full-Stack JavaScript Developer, Author-in-Progress, Aspiring YouTuber, and Expat Turned Entrepreneur.
 
