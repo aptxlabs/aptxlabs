@@ -47,4 +47,4 @@ If you are located in a jurisdiction that grants you rights over your personal d
 
 ## Contact
 
-If you have any questions about this policy, email us at: [fx@aptxlabs.com](mailto:fx@aptxlabs.com)
+If you have any questions about this policy, email us: [fx@aptxlabs.com](mailto:fx@aptxlabs.com)
