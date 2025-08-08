@@ -10,6 +10,8 @@ hideTitle: true
 
 {{< aboutbutton >}}
 
+{{< convertkit >}}
+
 {{< homematterbottom >}}
 
 {{< blogbutton >}}
