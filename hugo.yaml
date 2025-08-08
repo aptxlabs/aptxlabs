@@ -1,0 +1,81 @@
+baseURL: "https://aptxlabs.com/"
+languageCode: "en-us"
+title: "Aptxlabs"
+theme: "hugo-papermodest"
+
+googleAnalytics: "G-MX459CF92X"
+
+pagination:
+  pagerSize: 10
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+
+params:
+  env: "production"
+  author: "Aptxlabs"
+  defaultTheme: "auto"
+  showReadingTime: true
+  showCodeCopyButtons: true
+  ShowPostNavLinks: true
+  showBreadCrumbs: true
+  showToc: true
+  tocopen: true
+  mainSections: ["posts"]
+  ShowSearch: true
+  ShowSocialIcons: true
+  ShowPostIcons: true
+  ShowFeaturedImageInList: true
+  ShowFeaturedImageInPost: true
+
+  images:
+    - "/images/og-image.webp"
+
+  cover:
+    responsiveImages: false
+
+  socialIcons:
+    - name: "facebook"
+      url: "https://facebook.com/aptxlabs"
+    - name: "youtube"
+      url: "https://www.youtube.com/@aptxlabs"
+    - name: "instagram"
+      url: "https://www.instagram.com/aptxlabs"
+    - name: "x-twitter"
+      url: "https://x.com/aptxlabs"
+    - name: "at"
+      url: "mailto:fx@aptxlabs.com"
+
+  footer:
+    links:
+      - name: Privacy Policy
+        url: /legal/privacy-policy/
+      - name: Terms of Use
+        url: /legal/terms-of-use/
+      - name: Refund Policy
+        url: /legal/refund-and-cancellation-policy/
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "About"
+      url: "/about/"
+      weight: 2
+    - name: "Blog"
+      url: "/posts/"
+      weight: 3
+    - name: "Search"
+      url: "/search/"
+      weight: 4
