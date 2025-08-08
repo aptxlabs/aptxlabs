@@ -6,4 +6,4 @@ title: "Contact"
 
 We’d love to hear from you. Fill out the form below.
 
-{{< partial "contactform.html" >}}
+{{< contactform >}}
