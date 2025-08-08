@@ -1,8 +1,6 @@
 ---
-title: "Contact"
+title: "Contact Us"
 ---
-
-# Contact Us
 
 We’d love to hear from you. Fill out the form below.
 
