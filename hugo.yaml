@@ -79,6 +79,3 @@ menu:
     - name: "Search"
       url: "/search/"
       weight: 4
-    - name: "Contact"
-      url: "/contact/"
-      weight: 5
