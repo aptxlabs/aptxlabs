@@ -20,7 +20,7 @@ Let’s be honest: the tools we _want_ to use as developers rarely match what th
 
 ---
 
-🎥 Watch the video version:
+🎥 Watch the video:
 
 {{< youtube NJwWlLss52o >}}
 
